@@ -20,6 +20,9 @@
     <!-- Bootstrap Tags Input CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/bootstrap-tagsinput.css">
 
+    <!-- Timeline CSS -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/timeline.css">
+
     <style media="screen">
       .navbar, .navbar-inverse, .navbar-default a{
         background-color: #F4D03F !important;
