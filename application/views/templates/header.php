@@ -17,6 +17,9 @@
     <!-- Bootswatch CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
 
+    <!-- Bootstrap Tags Input CSS -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/bootstrap-tagsinput.css">
+
     <style media="screen">
       .navbar, .navbar-inverse, .navbar-default a{
         background-color: #F4D03F !important;
