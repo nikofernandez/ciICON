@@ -55,7 +55,7 @@
         border-bottom: #ccc 1px solid;
         margin-bottom: 30px;
         color: #fff;
-        /*background:url('../assets/img/showcase.jpg') no-repeat center center;*/
+        background:url('<?php echo base_url(); ?>/assets/img/ICON Banner.jpg') no-repeat center center;
       }
 
       .showcase h1{
