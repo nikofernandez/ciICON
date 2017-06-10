@@ -89,9 +89,10 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="<?php echo base_url(); ?>">Home</a></li>
+            <li><a href="<?php echo base_url(); ?>/about">About</a></li>
+            <li><a href="<?php echo base_url(); ?>/news">News</a></li>
+            <li><a href="<?php echo base_url(); ?>/contact">Contact Us</a></li>
             <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -104,6 +105,11 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Submit Photo</a></li>
+            <li><a href="#">Submit Article</a></li>
+            <li><a href="#">Join the Team</a></li>
           </ul>
         </div>
       </div>
