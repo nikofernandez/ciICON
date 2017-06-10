@@ -8,7 +8,7 @@
       // $data array passes any variable or data to the view page
       $data['title'] = ucfirst($page);
 
-      $this->load->view('templates/header');
+      $this->load->view('templates/header', $data);
       $this->load->view('pages/'.$page, $data);
       $this->load->view('templates/footer');
 
