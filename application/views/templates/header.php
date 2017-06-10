@@ -39,6 +39,7 @@
 
       footer{
         border-top: #ccc 2px solid !important;
+        margin-top: 20px !important;
       }
 
       .showcase{
