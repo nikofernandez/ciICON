@@ -1,11 +1,14 @@
-    <footer class="footer">
-      <div class="container-fluid">
-        <ul class="list-inline">
-          <li class="list-inline-item"><button type="button" class="btn btn-link" name="button"><span class="fa fa-facebook-square"></span> Lorem ipsum dolor</button></li>
-          <li class="list-inline-item"><button type="button" class="btn btn-link" name="button"><span class="fa fa-twitter-square"></span> Lorem ipsum dolor</button></li>
-          <li class="list-inline-item"><button type="button" class="btn btn-link" name="button"><span class="fa fa-youtube-square"></span> Lorem ipsum dolor</button></li>
-        </ul>
-    </footer>
+
+    <?php if($isAdmin === false || $Login === false) : ?>
+      <footer class="footer">
+        <div class="container-fluid">
+          <ul class="list-inline">
+            <li class="list-inline-item"><button type="button" class="btn btn-link" name="button"><span class="fa fa-facebook-square"></span> Lorem ipsum dolor</button></li>
+            <li class="list-inline-item"><button type="button" class="btn btn-link" name="button"><span class="fa fa-twitter-square"></span> Lorem ipsum dolor</button></li>
+            <li class="list-inline-item"><button type="button" class="btn btn-link" name="button"><span class="fa fa-youtube-square"></span> Lorem ipsum dolor</button></li>
+          </ul>
+      </footer>
+    <?php endif; ?>
 
     <!-- jQuery CDN -->
     <script
