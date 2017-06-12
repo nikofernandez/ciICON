@@ -10,7 +10,7 @@
 
       <div class="list-group text-center">
         <?php foreach($categories as $cat) : ?>
-          <a href="<?php echo site_url('/posts/index/'.$cat['cat_id']); ?>" class="list-group-item">
+          <a href="<?php echo site_url('news/posts/'.$cat['cat_id']); ?>" class="list-group-item">
             <h4 class="list-group-item-heading">
               <span class="<?php echo $cat['symbol']; ?>"></span>
               <?php echo $cat['name']; ?>

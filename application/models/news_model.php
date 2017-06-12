@@ -12,7 +12,7 @@
 
     public function get_category($cat_id){
       $query = $this->db->get_where('categories', array('cat_id' => $cat_id));
-      return $query;
+      return $query->row();
     }
   }
 ?>
