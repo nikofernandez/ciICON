@@ -118,7 +118,6 @@
           <?php if ($Login === true) : ?> <!-- If in login page -->
             <ul class="nav navbar-nav">
               <li><a href="<?php echo base_url(); ?>admin/index">Login</a></li>
-              <li><a href="<?php echo base_url(); ?>admin/register">Register</a></li>
             </ul>
           <?php endif; ?>
         </div>
