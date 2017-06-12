@@ -21,7 +21,7 @@
       // $data array passes any variable or data to the view page
       $data['title'] = 'Dashboard';
       $data['isAdmin'] = true;
-      $data['Login'] = true;
+      $data['Login'] = false;
 
       $this->load->view('templates/header', $data);
       $this->load->view('admin/dashboard', $data);

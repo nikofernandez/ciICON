@@ -120,6 +120,14 @@
               <li><a href="<?php echo base_url(); ?>admin/index">Login</a></li>
             </ul>
           <?php endif; ?>
+
+          <?php if ($isAdmin === true) : ?>
+            <ul class="nav navbar-nav">
+              <li><a href="<?php echo base_url(); ?>admin/dashboard">Overview</a></li>
+              <li><a href="<?php echo base_url(); ?>admin/submission">Submission</a></li>
+              <li><a href="<?php echo base_url(); ?>admin/posts">Posts</a></li>
+            </ul>
+          <?php endif; ?>
         </div>
       </div>
     </nav>
