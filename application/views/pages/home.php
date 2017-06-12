@@ -30,3 +30,62 @@
     </div>
   </div>
 </section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>Goals</h2>
+
+        <!-- ICON ROW 1 -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <i class="fa fa-bell"></i>
+            <h4>Release Updated News</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <i class="fa fa-camera-retro"></i>
+            <h4>Capture The Moment</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <i class="fa fa-coffee"></i>
+            <h4>Work Endlessly For You</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+        </div>
+
+        <!-- ICON ROW 2 -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <i class="fa fa-users"></i>
+            <h4>Be A Community</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <i class="fa fa-user"></i>
+            <h4>Be Part of Our Team</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <i class="fa fa-smile-o"></i>
+            <h4>Have Fun</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> <!-- /FEATURES -->
+
+<section id="main-message">
+  <div class="container">
+    <blockquote>
+      <p>" May our successor learn from the lesson that I personally learned the hard way: A passion thatr burns brightly scalds in cold water. The publication is in no doubt destined to show its true potential. May we all learn from that mistake and use it as a medium for improvement. Have a good one and good luck. We all need that "</p>
+      <small>Message from our former <cite title="Source Title">EIC, Vernil P. Puno</cite></small>
+    </blockquote>
+  </div>
+</section>
