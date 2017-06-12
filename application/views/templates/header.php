@@ -84,6 +84,28 @@
         padding: 15px;
         border: #ccc 1px solid;
       }
+
+      /* FEATURES */
+      #features{
+        border-top: #D5D8DC 1px solid;
+        border-bottom: #D5D8DC 1px solid;
+        padding-bottom: 30px;
+      }
+      #features h2{
+        font-size: 35px;
+        margin 0;
+        padding-bottom: 10px;
+      }
+
+      #features .fa{
+        font-size: 60px;
+        color: #121035;
+      }
+
+      /* MESSAGE */
+      #main-message{
+        margin-top: 50px;
+      }
     </style>
   </head>
   <body>
