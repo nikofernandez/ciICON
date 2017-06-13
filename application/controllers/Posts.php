@@ -4,7 +4,7 @@
       // $data array passes any variable or data to the view page
       $data['title'] = 'Posts';
       $data['isAdmin'] = false; // Required variable
-      $data['Login'] = false; // Required variable
+      $data['LoginPage'] = false; // Required variable
 
       $data['posts'] = $this->post_model->get_posts();
       //print_r($data['posts']);
