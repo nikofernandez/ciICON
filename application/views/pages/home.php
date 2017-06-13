@@ -1,7 +1,44 @@
-<section class="showcase">
-  <div class="container">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <!-- <section class="showcase">
+
+      </section> -->
+      <img src="http://via.placeholder.com/650x500" class="img img-responsive" alt="">
+    </div>
+    <div class="col-md-6">
+      <div class="row" id="latest-news">
+        <div class="col-md-3">
+          <img src="http://via.placeholder.com/500x500" class="img img-responsive" alt="">
+        </div>
+        <div class="col-md-9">
+          <h2>Title here</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...</p>
+        </div>
+      </div>
+      <div class="row" id="latest-news">
+        <div class="col-md-3">
+          <img src="http://via.placeholder.com/500x500" class="img img-responsive" alt="">
+        </div>
+        <div class="col-md-9">
+          <h2>Title here</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...</p>
+        </div>
+      </div>
+      <div class="row" id="latest-news">
+        <div class="col-md-3">
+          <img src="http://via.placeholder.com/500x500" class="img img-responsive" alt="">
+        </div>
+        <div class="col-md-9">
+          <h2>Title here</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...</p>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+</div>
+
+<hr>
 
 <section class="boxes">
   <div class="container">
@@ -9,7 +46,7 @@
       <div class="col-md-4">
         <div class="box">
           <i class="fa fa-users" aria-hidden="true"></i>
-          <h3>Lorem Ipsum Dolor</h3>
+          <h3>HEI</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>

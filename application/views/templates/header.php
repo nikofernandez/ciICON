@@ -106,6 +106,13 @@
       #main-message{
         margin-top: 50px;
       }
+
+      /* LATEST NEWS*/
+      #latest-news{
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: #D5D8DC 1px solid;
+      }
     </style>
   </head>
   <body>
