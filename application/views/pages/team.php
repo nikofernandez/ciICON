@@ -76,6 +76,34 @@
           </select>
         </div>
         <div class="form-group">
+          <label class="col-xs-3 control-label">Job position</label><br>
+            <div class="radio">
+              <label>
+                <input type="radio" name="job" value="designer" /> Position 1
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="job" value="designer" /> Position 2
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="job" value="designer" /> Position 3
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="job" value="designer" /> Position 4
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="job" value="designer" /> Position 5
+              </label>
+            </div>
+        </div>
+        <div class="form-group">
           <label for="skills">Skills</label><br>
           <input type="text" value="Photoshop,Photography,Front-End,Videographer,Writer" class="form-control" data-role="tagsinput">
         </div>
