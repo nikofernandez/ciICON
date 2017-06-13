@@ -45,6 +45,13 @@
           <input type="text" name="studNum" class="form-control" value="" placeholder="Student # here...">
         </div>
         <div class="form-group">
+          <label for="contact">Contact #</label><br>
+          <div class="input-group">
+            <span class="input-group-addon" id="contactNum">+63</span>
+            <input type="text" class="form-control" class="form-control" placeholder="Contact # here..." aria-describedby="contactNum">
+          </div>
+        </div>
+        <div class="form-group">
           <label for="email">Email</label><br>
           <input type="text" name="email" class="form-control" value="" placeholder="Email here...">
         </div>
