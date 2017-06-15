@@ -36,5 +36,11 @@
 
       return $this->db->insert('news', $data);
     }
+
+    public function delete_post($id){
+      $this->db->where('id', $id);
+      $this->db->delete('news');
+      return true;
+    }
   }
 ?>
