@@ -5,6 +5,10 @@
     </div>
   </section>
 
+  <div class="jumbotron">
+    <img src="http://via.placeholder.com/500x500" class="img img-responsive" alt="">
+  </div>
+
   <div class="row">
     <div class="col-md-8">
       <div class="panel panel-primary">
