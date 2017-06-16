@@ -20,8 +20,10 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+      <!-- Bootstrap Tagsinput JS -->
       <script src="<?php echo base_url(); ?>assets/js/bootstrap-tagsinput.js" charset="utf-8"></script>
 
+      <!-- iCheck JS -->
       <script src="<?php echo base_url(); ?>assets/js/icheck.js" charset="utf-8"></script>
       <script>
         $(document).ready(function(){
@@ -31,5 +33,13 @@
           });
         });
       </script>
+
+      <!-- CKEditor -->
+      <script src="//cdn.ckeditor.com/4.7.0/basic/ckeditor.js"></script>
+      <script>
+        window.onload = function() {
+            CKEDITOR.replace( 'editor1' );
+        };
+    </script>
   </body>
 </html>
