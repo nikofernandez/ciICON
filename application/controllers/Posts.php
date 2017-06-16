@@ -27,7 +27,7 @@
       $data['LoginPage'] = false; // Required variable
 
       $this->load->view('templates/header', $data);
-      $this->load->view('posts/view', $data);
+      $this->load->view('posts/view', $data); 
       $this->load->view('templates/footer', $data);
     }
 
@@ -36,6 +36,8 @@
       $data['title'] = 'Create New Post';
       $data['isAdmin'] = true; // Required variable
       $data['LoginPage'] = false; // Required variable
+
+      $data['categories'] = $this->news_model->get_news_categories();
 
       $this->form_validation->set_rules('title', 'Title', 'required');
       $this->form_validation->set_rules('body', 'Body', 'required');
@@ -66,7 +68,7 @@
 
       // $data array passes any variable or data to the view page
       $data['title'] = 'Edit Post';
-      $data['isAdmin'] = false; // Required variable
+      $data['isAdmin'] = true; // Required variable
       $data['LoginPage'] = false; // Required variable
 
       $this->load->view('templates/header', $data);

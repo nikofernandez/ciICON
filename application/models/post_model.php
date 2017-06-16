@@ -31,7 +31,8 @@
       $data = array(
         'title' => $this->input->post('title'),
         'slug' => $slug,
-        'body' => $this->input->post('body')
+        'body' => $this->input->post('body'),
+        'cat_id' => $this->input->post('category')
       );
 
       return $this->db->insert('news', $data);
