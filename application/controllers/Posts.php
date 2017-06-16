@@ -55,5 +55,29 @@
       $this->post_model->delete_post($id);
       redirect('news/index');
     }
+
+    public function edit($slug){
+
+      $data['post'] = $this->post_model->get_posts($slug);
+
+      if(empty($data['post'])){
+        show_404();
+      }
+
+      // $data array passes any variable or data to the view page
+      $data['title'] = 'Edit Post';
+      $data['isAdmin'] = false; // Required variable
+      $data['LoginPage'] = false; // Required variable
+
+      $this->load->view('templates/header', $data);
+      $this->load->view('posts/edit', $data);
+      $this->load->view('templates/footer', $data);
+    }
+
+    public function update(){
+      $this->post_model->update_post();
+      $slug = url_title($this->input->post('title'));
+      redirect('posts/view/'. $slug);
+    }
   }
 ?>

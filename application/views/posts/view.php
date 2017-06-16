@@ -13,8 +13,8 @@
       <p><?php echo $post['body']; ?></p>
     </div>
     <div class="col-md-2">
-      <button type="button" class="btn btn-warning pull-right" name="button">Edit</button>
-      <?php echo form_open('/posts/delete/'. $post['id'] ); ?>
+      <a href="<?php echo base_url(); ?>posts/edit/<?php echo $post['slug']; ?>" class=" btn btn-info pull-right">Edit</a>
+      <?php echo form_open('/posts/delete/'. $post['slug'] ); ?>
         <input type="submit" class="btn btn-danger" name="Delete" value="Delete">
       </form>
     </div>
