@@ -67,9 +67,9 @@
               <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="<?php echo base_url(); ?>photo">Submit Photo</a></li>
-              <li><a href="<?php echo base_url(); ?>article">Submit Article</a></li>
-              <li><a href="<?php echo base_url(); ?>team">Join the Team</a></li>
+              <li><a href="<?php echo base_url(); ?>submissions/photo">Submit Photo</a></li>
+              <li><a href="<?php echo base_url(); ?>submissions/article">Submit Article</a></li>
+              <li><a href="<?php echo base_url(); ?>submissions/team">Join the Team</a></li>
             </ul>
           <?php endif; ?>
 
