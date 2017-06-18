@@ -25,5 +25,10 @@
       $this->load->view('posts/index', $data);
       $this->load->view('templates/footer', $data);
     }
+
+    public function delete($id){
+      $this->news_model->delete_category($id);
+      redirect('news/index');
+    }
   }
 ?>

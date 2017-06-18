@@ -14,5 +14,11 @@
       $query = $this->db->get_where('categories', array('cat_id' => $cat_id));
       return $query->row();
     }
+
+    public function delete_category($id){
+      $this->db->where('cat_id', $id);
+      $this->db->delete('categories');
+      return true;
+    }
   }
 ?>

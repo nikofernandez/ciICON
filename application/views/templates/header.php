@@ -97,7 +97,7 @@
                   <li><a href="<?php echo base_url(); ?>news/index">View Posts</a></li>
                   <li><a href="<?php echo base_url(); ?>posts/create">Create New Posts</a></li>
                   <li class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
+                  <li><a href="<?php echo base_url(); ?>news/create">Create New Categories</a></li>
                 </ul>
               </li>
             </ul>
