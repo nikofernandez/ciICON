@@ -30,5 +30,24 @@
       $this->news_model->delete_category($id);
       redirect('news/index');
     }
+
+    public function create(){
+      // $data array passes any variable or data to the view page
+      $data['title'] = 'Create New Category';
+      $data['isAdmin'] = true; // Required variable
+      $data['LoginPage'] = false; // Required variable
+
+      $this->form_validation->set_rules('name', 'Name', 'required');
+
+      if ($this->form_validation->run() === FALSE) {
+        $this->load->view('templates/header', $data);
+        $this->load->view('news/create', $data);
+        $this->load->view('templates/footer', $data);
+      }else{
+        $this->news_model->create_category();
+        $slug = url_title($this->input->post('title'));
+        redirect('news/index/');
+      }
+    }
   }
 ?>

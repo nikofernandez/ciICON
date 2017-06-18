@@ -20,5 +20,14 @@
       $this->db->delete('categories');
       return true;
     }
+
+    public function create_category(){
+
+      $data = array(
+        'name' => $this->input->post('name')
+      );
+
+      return $this->db->insert('categories', $data);
+    }
   }
 ?>
