@@ -1,12 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$route['submissions/article'] = 'submissions/article';
+$route['submissions/photo'] = 'submissions/photo';
+$route['submissions/team'] = 'submissions/team';
+
 $route['posts/create'] = 'posts/create';
 $route['posts/edit'] = 'posts/edit';
 $route['posts'] = 'posts/index';
-
-$route['admin/dashboard'] = 'admin/dashboard';
-$route['admin'] = 'admin/login';
 
 $route['news'] = 'news/index';
 
