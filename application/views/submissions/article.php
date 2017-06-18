@@ -80,7 +80,7 @@
           </div>
           <div class="form-group">
             <label for="message">Description</label><br>
-            <textarea name="message" class="form-control" rows="10" cols="30"></textarea>
+            <textarea name="message" class="form-control" rows="5" cols="30"></textarea>
           </div>
           <input type="submit" name="submit" value="Submit" class="btn btn-success btn-block">
         </form>
