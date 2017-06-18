@@ -82,9 +82,24 @@
       $data['isAdmin'] = false; // Required variable
       $data['LoginPage'] = false; // Required variable
 
-      $this->load->view('templates/header', $data);
-      $this->load->view('submissions/team', $data);
-      $this->load->view('templates/footer', $data);
+
+      $this->form_validation->set_rules('name', 'Name', 'required');
+      $this->form_validation->set_rules('studNum', 'Student #', 'required');
+      $this->form_validation->set_rules('contact', 'Contact #', 'required');
+      $this->form_validation->set_rules('email', 'Email', 'required');
+      $this->form_validation->set_rules('course', 'Course', 'required');
+      $this->form_validation->set_rules('job', 'Job Position', 'required');
+      $this->form_validation->set_rules('skills', 'Skills', 'required');
+
+      if ($this->form_validation->run() === FALSE) {
+        $this->load->view('templates/header', $data);
+        $this->load->view('submissions/team', $data);
+        $this->load->view('templates/footer', $data);
+      }else{
+        $this->submissions_model->submit_team();
+        $this->session->set_flashdata('team_success', 'Sign Up Success, Thank you! :D. Taking too long? contact feudicon.web@gmail.com');
+        redirect('submissions/team');
+      }
     }
   }
 ?>

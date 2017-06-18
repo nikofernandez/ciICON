@@ -45,70 +45,69 @@
       </div>
     </div>
     <div class="col-md-8">
-      <form class="well">
-        <div class="form-group">
-          <label for="name">Name</label><br>
-          <input type="text" name="name" class="form-control" value="" placeholder="Name here...">
-        </div>
-        <div class="form-group">
-          <label for="studNum">Student #</label><br>
-          <input type="text" name="studNum" class="form-control" value="" placeholder="Student # here...">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label><br>
-          <input type="text" name="email" class="form-control" value="" placeholder="Email here...">
-        </div>
-        <div class="form-group">
-          <label for="contact">Contact #</label><br>
-          <div class="input-group">
-            <span class="input-group-addon" id="contactNum">+63</span>
-            <input type="text" class="form-control" class="form-control" placeholder="Contact # here..." aria-describedby="contactNum">
+      <div class="well">
+
+        <h5 class="text-danger"><?php echo validation_errors(); ?></h5>
+
+        <?php if($this->session->flashdata('team_success')) : ?>
+          <div class="alert alert-dismissible alert-success">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <?php echo $this->session->flashdata('team_success'); ?>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="course"></label>
-          <select class="form-control" name="course">
-            <option>BS Information Technology</option>
-            <option>BS Accountancy</option>
-            <option>BSBA Financial Management</option>
-            <option>BSBA Operations Management</option>
-            <option>BSBA Marketing</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="col-xs-3 control-label">Job position</label><br>
+        <?php endif; ?>
+
+        <?php echo form_open('submissions/team'); ?>
+          <div class="form-group">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" class="form-control" value="" placeholder="Name here...">
+          </div>
+          <div class="form-group">
+            <label for="studNum">Student #</label><br>
+            <input type="number" name="studNum" class="form-control" value="" placeholder="Student # here...">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" class="form-control" value="" placeholder="Email here...">
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact #</label><br>
+            <div class="input-group">
+              <span class="input-group-addon" id="contactNum">+63</span>
+              <input type="number" class="form-control" name="contact" class="form-control" placeholder="Contact # here..." aria-describedby="contactNum">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="course"></label>
+            <select class="form-control" name="course">
+              <option>BS Information Technology</option>
+              <option>BS Accountancy</option>
+              <option>BSBA Financial Management</option>
+              <option>BSBA Operations Management</option>
+              <option>BSBA Marketing</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="control-label">Job position:</label><br>
             <div class="radio">
               <label>
-                <input type="radio" name="job" value="designer" /> Position 1
+                <input type="radio" name="job" value="Campus News Editor" /> Campus News Editor
               </label>
-            </div>
-            <div class="radio">
               <label>
-                <input type="radio" name="job" value="designer" /> Position 2
+                <input type="radio" name="job" value="Features Editor" /> Features Editor
               </label>
-            </div>
-            <div class="radio">
               <label>
-                <input type="radio" name="job" value="designer" /> Position 3
+                <input type="radio" name="job" value="Business Editor" /> Business Editor
               </label>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="job" value="designer" /> Position 4
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="job" value="designer" /> Position 5
-              </label>
-            </div>
-        </div>
-        <div class="form-group">
-          <label for="skills">Skills</label><br>
-          <input type="text" value="Photoshop,Photography,Front-End,Videographer,Writer" class="form-control" data-role="tagsinput">
-        </div>
-        <button type="button" class="btn btn-success" name="button">Submit</button>
-      </form>
+          </div>
+          <div class="form-group">
+            <label for="skills">Skills</label><br>
+            <input type="text" value="Photoshop,Photography,Front-End,Videographer,Writer" name="skills" id="skills" class="form-control" data-role="tagsinput">
+            <p class="help-block">*Press <kbd>tab</kbd> to add more skills</p>
+          </div>
+          <input type="submit" class="btn btn-success btn-block" value="Submit">
+        </form>
+      </div>
     </div>
   </div>
 </div>

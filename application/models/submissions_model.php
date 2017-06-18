@@ -30,5 +30,29 @@
 
       return $this->db->insert('photos', $data);
     }
+
+    public function submit_team(){
+
+      $var = $this->input->post('skills');
+      $skillset = explode(',', $var); // Collects all skills to an array
+      $cnt = count(explode(',', $var)); // Count number of data inside the array
+      for ($ktr=0; $ktr < $cnt; $ktr++) {
+        $data = array(
+          'StudNum' => $this->input->post('studNum'),
+          'skills' => $skillset[$ktr]
+        );
+        $this->db->insert('skills', $data);
+      }
+      $data = array(
+        'StudNum' => $this->input->post('studNum'),
+        'Name' => $this->input->post('name'),
+        'Email' => $this->input->post('email'),
+        'Contact' => $this->input->post('contact'),
+        'Course' => $this->input->post('course'),
+        'Job' => $this->input->post('job')
+      );
+
+      return $this->db->insert('team', $data);
+    }
   }
 ?>
