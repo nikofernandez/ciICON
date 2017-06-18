@@ -5,7 +5,6 @@
     }
 
     public function submit_article($sub_article){
-      $slug = url_title($this->input->post('title'));
 
       $data = array(
         'Name' => $this->input->post('name'),
