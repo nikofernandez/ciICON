@@ -1,13 +1,28 @@
 
-
-.navbar, .navbar-inverse, .navbar-default a, .sidebar-nav{
+#main-header{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav, nav ul a, .brand-logo, .side-nav{
   background-color: #F4D03F !important;
   color: #000 !important;
 }
 
-.navbar-default a:hover{
-  background-color: #17202A !important;
-  color: #FDFEFE !important;
+nav ul li a:hover{
+  background-color: #D4AC0D !important;
+  background-color: rgba(0,0,0,0.1) !important;
+  outline: 0 !important;
+}
+
+blockquote{
+  border-left: 5px solid #F4D03F !important;
+}
+
+.page-footer, .footer-copyright{
+  background-color: #F4D03F !important;
+  color: #fff !important;
+  
 }
 
 .box{
@@ -61,21 +76,44 @@ footer{
   border: #ccc 1px solid;
 }
 
+/* LATEST NEWS*/
+#latest-news{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: #D5D8DC 1px solid;
+}
+
+#latest-news h2{
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+
+#latest-news p{
+  font-size: 100%;
+}
+
 /* FEATURES */
-#features{
+#main-goals{
   border-top: #D5D8DC 1px solid;
   border-bottom: #D5D8DC 1px solid;
+  padding-top: 10px;
   padding-bottom: 30px;
+  text-align: center;
 }
-#features h2{
-  font-size: 35px;
+#main-goals h4{
+  font-size: 2em;
   margin 0;
   padding-bottom: 10px;
 }
 
-#features .fa{
+#main-goals .fa{
   font-size: 60px;
   color: #121035;
+}
+
+#main-goals p{
+  font-size: 100%;
 }
 
 /* MESSAGE */
@@ -83,9 +121,79 @@ footer{
   margin-top: 50px;
 }
 
-/* LATEST NEWS*/
-#latest-news{
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: #D5D8DC 1px solid;
+/* MESSAGE */
+#main-message{
+  margin-top: 50px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    /* For tablets: */
+    #latest-news h2{
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 2em;
+    }
+    #latest-news p{
+      font-size: 55%;
+    }
+
+    /* FEATURES */
+    #main-goals{
+      border-top: #D5D8DC 1px solid;
+      border-bottom: #D5D8DC 1px solid;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    #main-goals h4{
+      font-size: 1em;
+      margin 0;
+      padding-bottom: 10px;
+    }
+
+    #main-goals .fa{
+      font-size: 45px;
+      color: #121035;
+    }
+
+    #main-goals p{
+      font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* For tablets: */
+    #latest-news h2{
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 2em;
+    }
+    #latest-news p{
+      font-size: 55%;
+    }
+
+    /* FEATURES */
+    #main-goals{
+      border-top: #D5D8DC 1px solid;
+      border-bottom: #D5D8DC 1px solid;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    #main-goals h4{
+      font-size: 1em;
+      margin 0;
+      padding-bottom: 10px;
+    }
+
+    #main-goals .fa{
+      font-size: 45px;
+      color: #121035;
+    }
+
+    #main-goals p{
+      font-size: 70%;
+    }
 }
