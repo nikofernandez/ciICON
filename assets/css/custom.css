@@ -10,6 +10,10 @@
   color: #FDFEFE !important;
 }
 
+blockquote{
+  border-left: 5px solid #F4D03F !important;
+}
+
 .box{
   margin-bottom: 20px;
 }
