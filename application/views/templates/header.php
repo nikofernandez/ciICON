@@ -90,7 +90,3 @@
         </div>
       </div>
     </nav>
-
-    <?php if($this->session->flashdata('login_failed')) : ?>
-      <p class="alert alert-danger"><?php $this->session->flashdata('login_failed'); ?></p>
-    <?php endif; ?>
