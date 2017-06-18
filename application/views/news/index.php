@@ -11,7 +11,7 @@
       <?php foreach($categories as $cat) : ?>
         <div class="col-md-1 col-sm-1 col-xs-1 text-center">
           <?php echo form_open('/news/delete/'. $cat['cat_id']); ?>
-            <input type="submit" class="btn btn-danger" name="Delete" value="X">
+            <input type="submit" class="btn btn-danger btn-sm" name="Delete" value="X">
           </form>
         </div>
         <div class="col-md-11 col-sm-11 col-xs-11">
