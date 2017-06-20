@@ -15,7 +15,7 @@
       $data['LoginPage'] = false; // Required variable
       $config['base_url'] = base_url() . 'news/posts/' . $cat_id . '/';
       $config['total_rows'] = $this->db->where('cat_id', $cat_id)->from('news')->count_all_results();
-      $config['per_page'] = 2;
+      $config['per_page'] = 5;
       $config['uri_segment'] = 4;
 
       $this->pagination->initialize($config);
