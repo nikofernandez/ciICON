@@ -62,7 +62,7 @@
 
             <!-- Admin View -->
             <ul class="nav navbar-nav">
-              <li><a href="<?php echo base_url(); ?>admin/submissions">Submissions</a></li>
+              <li><a href="<?php echo base_url(); ?>dashboard/submissions">Submissions</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posts <span class="caret"></span></a>
                 <ul class="dropdown-menu" id="dropdown-menu" role="menu">
@@ -72,6 +72,8 @@
                   <li><a href="<?php echo base_url(); ?>news/create">Create New Categories</a></li>
                 </ul>
               </li>
+              <li><a href="<?php echo base_url(); ?>admin/login">Login</a></li>
+              <li><a href="<?php echo base_url(); ?>admin/logout">Logout</a></li>
             </ul> <!-- End of Admin View -->
 
             <!-- Users View on Left -->
