@@ -25,11 +25,17 @@
     }
 
     public function delete($id){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
       $this->news_model->delete_category($id);
       redirect('news/index');
     }
 
     public function create(){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
       // $data array passes any variable or data to the view page
       $data['title'] = 'Create New Category';
       $data['LoginPage'] = false; // Required variable

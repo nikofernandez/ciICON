@@ -30,6 +30,9 @@
     }
 
     public function create(){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
       // $data array passes any variable or data to the view page
       $data['title'] = 'Create New Post';
       $data['LoginPage'] = false; // Required variable
@@ -51,11 +54,17 @@
     }
 
     public function delete($id){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
       $this->post_model->delete_post($id);
       redirect('news/index');
     }
 
     public function edit($slug){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
 
       $data['post'] = $this->post_model->get_posts($slug);
 
@@ -73,6 +82,9 @@
     }
 
     public function update(){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
       $this->post_model->update_post();
       $slug = url_title($this->input->post('title'));
       redirect('posts/view/'. $slug);
