@@ -86,3 +86,10 @@
         </div>
       </div>
     </nav>
+
+    <?php if($this->session->flashdata('admin_loggin_success')) : ?>
+      <div class="alert alert-dismissible alert-success">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <?php echo $this->session->flashdata('admin_loggin_success'); ?>
+      </div>
+    <?php endif; ?>
