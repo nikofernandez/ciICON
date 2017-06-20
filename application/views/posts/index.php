@@ -16,6 +16,9 @@
             </div>
           </div>
         <?php endforeach; ?>
+        <ul class="pager">
+          <li><?php echo $this->pagination->create_links(); ?></li>
+        </ul>
       </div>
 
     </div>

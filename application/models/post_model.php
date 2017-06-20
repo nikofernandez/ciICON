@@ -4,7 +4,11 @@
       $this->load->database(); // Loads database
     }
 
-    public function get_posts($slug = FALSE){
+    public function get_posts($slug = FALSE, $limit = FALSE, $offset = FALSE){
+      if ($limit) {
+        $this->db->limit($limit, $offset);
+      }
+      
       if($slug === FALSE){
         $this->db->order_by('news.id', 'DESC'); // Outputs the data by ID in descending order
         $this->db->join('categories', 'categories.cat_id = news.cat_id'); // INNER JOIN tables categories and news table
@@ -18,7 +22,11 @@
 
     // public function get_category
 
-    public function get_posts_by_category($cat_id){
+    public function get_posts_by_category($cat_id, $limit = FALSE, $offset = FALSE){
+      if ($limit) {
+        $this->db->limit($limit, $offset);
+      }
+
       $this->db->order_by('news.id', 'DESC');
       $this->db->join('categories', 'categories.cat_id = news.cat_id');
       $query = $this->db->get_where('news', array('news.cat_id' => $cat_id));

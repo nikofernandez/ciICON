@@ -11,13 +11,18 @@
       $this->load->view('templates/footer', $data);
     }
 
-    public function posts($cat_id){
-
+    public function posts($cat_id, $offset = 0){
       $data['LoginPage'] = false; // Required variable
+      $config['base_url'] = base_url() . 'news/posts/' . $cat_id . '/';
+      $config['total_rows'] = $this->db->where('cat_id', $cat_id)->from('news')->count_all_results();
+      $config['per_page'] = 2;
+      $config['uri_segment'] = 4;
+
+      $this->pagination->initialize($config);
 
       $data['title'] = $this->news_model->get_category($cat_id)->name;
 
-      $data['posts'] = $this ->post_model->get_posts_by_category($cat_id);
+      $data['posts'] = $this ->post_model->get_posts_by_category($cat_id, $config['per_page'], $offset);
 
       $this->load->view('templates/header', $data);
       $this->load->view('posts/index', $data);
