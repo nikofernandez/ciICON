@@ -3,7 +3,6 @@
     public function index(){
       // $data array passes any variable or data to the view page
       $data['title'] = 'Posts';
-      $data['isAdmin'] = false; // Required variable
       $data['LoginPage'] = false; // Required variable
 
       $data['posts'] = $this->post_model->get_posts();
@@ -23,18 +22,16 @@
 
       // $data array passes any variable or data to the view page
       $data['title'] = $data['post']['title'];
-      $data['isAdmin'] = false; // Required variable
       $data['LoginPage'] = false; // Required variable
 
       $this->load->view('templates/header', $data);
-      $this->load->view('posts/view', $data); 
+      $this->load->view('posts/view', $data);
       $this->load->view('templates/footer', $data);
     }
 
     public function create(){
       // $data array passes any variable or data to the view page
       $data['title'] = 'Create New Post';
-      $data['isAdmin'] = true; // Required variable
       $data['LoginPage'] = false; // Required variable
 
       $data['categories'] = $this->news_model->get_news_categories();
@@ -68,7 +65,6 @@
 
       // $data array passes any variable or data to the view page
       $data['title'] = 'Edit Post';
-      $data['isAdmin'] = true; // Required variable
       $data['LoginPage'] = false; // Required variable
 
       $this->load->view('templates/header', $data);

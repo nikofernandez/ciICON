@@ -3,7 +3,6 @@
     public function index(){
       // $data array passes any variable or data to the view page
       $data['title'] = 'News';
-      $data['isAdmin'] = false; // Required variable
       $data['LoginPage'] = false; // Required variable
       $data['categories'] = $this->news_model->get_news_categories();
 
@@ -14,7 +13,6 @@
 
     public function posts($cat_id){
 
-      $data['isAdmin'] = false; // Required variable
       $data['LoginPage'] = false; // Required variable
 
       $data['title'] = $this->news_model->get_category($cat_id)->name;
@@ -34,7 +32,6 @@
     public function create(){
       // $data array passes any variable or data to the view page
       $data['title'] = 'Create New Category';
-      $data['isAdmin'] = true; // Required variable
       $data['LoginPage'] = false; // Required variable
 
       $this->form_validation->set_rules('name', 'Name', 'required');

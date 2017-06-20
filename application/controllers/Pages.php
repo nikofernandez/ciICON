@@ -7,7 +7,6 @@
 
       // $data array passes any variable or data to the view page
       $data['title'] = ucfirst($page);
-      $data['isAdmin'] = false;
       $data['LoginPage'] = false; // Required variable
 
       $this->load->view('templates/header', $data);

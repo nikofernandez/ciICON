@@ -1,5 +1,5 @@
 
-    <?php if($isAdmin === false && $LoginPage === false) : ?>
+    <?php if($LoginPage === false) : ?>
       <footer class="footer">
         <div class="container-fluid">
           <ul class="list-inline">

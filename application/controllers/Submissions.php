@@ -3,7 +3,6 @@
     public function article(){
       // $data array passes any variable or data to the view page
       $data['title'] = 'Article';
-      $data['isAdmin'] = false; // Required variable
       $data['LoginPage'] = false; // Required variable
 
       $this->form_validation->set_rules('name', 'Name', 'required');
@@ -41,7 +40,6 @@
     public function photo(){
       // $data array passes any variable or data to the view page
       $data['title'] = 'Photo';
-      $data['isAdmin'] = false; // Required variable
       $data['LoginPage'] = false; // Required variable
 
       $this->form_validation->set_rules('name', 'Name', 'required');
@@ -79,7 +77,6 @@
     public function team(){
       // $data array passes any variable or data to the view page
       $data['title'] = 'Team';
-      $data['isAdmin'] = false; // Required variable
       $data['LoginPage'] = false; // Required variable
 
 
