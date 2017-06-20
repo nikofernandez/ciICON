@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-9">
               <h2><?php echo $post['title']; ?> <small>Posted on: <?php echo $post['created_at']; ?></small></h2>
-              <p><?php echo $post['body']; ?></p>
+              <p><?php echo word_limiter($post['body'], 60); ?></p>
               <br>
               <a href="<?php echo site_url('/posts/view/'.$post['slug']); ?>" class="btn btn-primary btn-sm">Read More</a>
             </div>
