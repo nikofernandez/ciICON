@@ -44,36 +44,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <?php if ($isAdmin === false && $LoginPage === false) : ?>
-            <a class="navbar-brand" href="<?php echo base_url(); ?>"><span class="fa fa-newspaper-o"></span> ICON</a>
-          <?php endif; ?>
-
-          <?php if ($isAdmin === true && $LoginPage === false) : ?>
-            <a class="navbar-brand" href="<?php echo base_url(); ?>admin/dashboard"><span class="fa fa-dashboard"></span> Overview</a>
-          <?php endif; ?>
+          <a class="navbar-brand" href="<?php echo base_url(); ?>"><span class="fa fa-newspaper-o"></span> ICON</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <?php if ($LoginPage === true) : ?>
+          <?php if ($LoginPage === false) : ?>
             <ul class="nav navbar-nav">
               <li></li>
             </ul>
-          <?php endif; ?>
 
-          <?php if ($isAdmin === false && $LoginPage === false) : ?>
+            <!-- Users View on right -->
             <ul class="nav navbar-nav">
               <li><a href="<?php echo base_url(); ?>about">About</a></li>
               <li><a href="<?php echo base_url(); ?>news/index">News</a></li>
               <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="<?php echo base_url(); ?>submissions/photo">Submit Photo</a></li>
-              <li><a href="<?php echo base_url(); ?>submissions/article">Submit Article</a></li>
-              <li><a href="<?php echo base_url(); ?>submissions/team">Join the Team</a></li>
-            </ul>
-          <?php endif; ?>
+            </ul> <!-- End of Users View nav-right-->
 
-          <?php if ($isAdmin === true) : ?>
+            <!-- Admin View -->
             <ul class="nav navbar-nav">
               <li><a href="<?php echo base_url(); ?>admin/submissions">Submissions</a></li>
               <li class="dropdown">
@@ -85,8 +72,17 @@
                   <li><a href="<?php echo base_url(); ?>news/create">Create New Categories</a></li>
                 </ul>
               </li>
-            </ul>
+            </ul> <!-- End of Admin View -->
+
+            <!-- Users View on Left -->
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="<?php echo base_url(); ?>submissions/photo">Submit Photo</a></li>
+              <li><a href="<?php echo base_url(); ?>submissions/article">Submit Article</a></li>
+              <li><a href="<?php echo base_url(); ?>submissions/team">Join the Team</a></li>
+            </ul> <!-- End of Users View on Left -->
           <?php endif; ?>
+
+
         </div>
       </div>
     </nav>
