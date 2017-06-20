@@ -44,7 +44,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo base_url(); ?>"><span class="fa fa-newspaper-o"></span> ICON</a>
+          <?php if(!$this->session->userdata('logged_in')) : ?>
+            <a class="navbar-brand" href="<?php echo base_url(); ?>"><span class="fa fa-newspaper-o"></span> ICON</a>
+          <?php endif; ?>
+
+          <?php if($this->session->userdata('logged_in')) : ?>
+            <a class="navbar-brand" href="<?php echo base_url(); ?>dashboard/index"><span class="fa fa-dashboard"></span> Overview</a>
+          <?php endif; ?>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -53,35 +59,46 @@
               <li></li>
             </ul>
 
-            <!-- Users View on right -->
-            <ul class="nav navbar-nav">
-              <li><a href="<?php echo base_url(); ?>about">About</a></li>
-              <li><a href="<?php echo base_url(); ?>news/index">News</a></li>
-              <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
-            </ul> <!-- End of Users View nav-right-->
+            <?php if(!$this->session->userdata('logged_in')) : ?>
+              <!-- Users View on right -->
+              <ul class="nav navbar-nav">
+                <li><a href="<?php echo base_url(); ?>about">About</a></li>
+                <li><a href="<?php echo base_url(); ?>news/index">News</a></li>
+                <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
+              </ul> <!-- End of Users View nav-right-->
+            <?php endif; ?>
 
-            <!-- Admin View -->
-            <ul class="nav navbar-nav">
-              <li><a href="<?php echo base_url(); ?>dashboard/submissions">Submissions</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posts <span class="caret"></span></a>
-                <ul class="dropdown-menu" id="dropdown-menu" role="menu">
-                  <li><a href="<?php echo base_url(); ?>news/index">View Posts</a></li>
-                  <li><a href="<?php echo base_url(); ?>posts/create">Create New Posts</a></li>
-                  <li class="divider"></li>
-                  <li><a href="<?php echo base_url(); ?>news/create">Create New Categories</a></li>
-                </ul>
-              </li>
-              <li><a href="<?php echo base_url(); ?>admin/login">Login</a></li>
-              <li><a href="<?php echo base_url(); ?>admin/logout">Logout</a></li>
-            </ul> <!-- End of Admin View -->
+            <?php if($this->session->userdata('logged_in')) : ?>
+              <!-- Admin View -->
+              <ul class="nav navbar-nav">
+                <li><a href="<?php echo base_url(); ?>dashboard/submissions">Submissions</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posts <span class="caret"></span></a>
+                  <ul class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <li><a href="<?php echo base_url(); ?>news/index">View Posts</a></li>
+                    <li><a href="<?php echo base_url(); ?>posts/create">Create New Posts</a></li>
+                    <li class="divider"></li>
+                    <li><a href="<?php echo base_url(); ?>news/create">Create New Categories</a></li>
+                  </ul>
+                </li>
+              </ul> <!-- End of Admin View -->
+            <?php endif; ?>
 
-            <!-- Users View on Left -->
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="<?php echo base_url(); ?>submissions/photo">Submit Photo</a></li>
-              <li><a href="<?php echo base_url(); ?>submissions/article">Submit Article</a></li>
-              <li><a href="<?php echo base_url(); ?>submissions/team">Join the Team</a></li>
-            </ul> <!-- End of Users View on Left -->
+            <?php if($this->session->userdata('logged_in')) : ?>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="<?php echo base_url(); ?>admin/logout">Logout</a></li>
+              </ul> <!-- End of Users View on Left -->
+            <?php endif; ?>
+
+            <?php if(!$this->session->userdata('logged_in')) : ?>
+              <!-- Users View on Left -->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="<?php echo base_url(); ?>submissions/photo">Submit Photo</a></li>
+                <li><a href="<?php echo base_url(); ?>submissions/article">Submit Article</a></li>
+                <li><a href="<?php echo base_url(); ?>submissions/team">Join the Team</a></li>
+              </ul> <!-- End of Users View on Left -->
+            <?php endif; ?>
+
           <?php endif; ?>
 
 
