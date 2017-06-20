@@ -31,7 +31,7 @@
           $this->session->set_userdata($admin_data);
 
           $this->session->set_flashdata('admin_loggin_success', 'Welcome Back! :D');
-          redirect('admin/login');
+          redirect('pages/home');
 
         }else{
           $this->session->set_flashdata('admin_loggin_failed', 'Login Failed! :(');
