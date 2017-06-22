@@ -5,6 +5,7 @@
       $data['title'] = 'Article';
       $data['LoginPage'] = false; // Required variable
 
+      $this->form_validation->set_rules('artname', 'Article Name', 'required');
       $this->form_validation->set_rules('name', 'Name', 'required');
       $this->form_validation->set_rules('studNum', 'Student #', 'required');
       $this->form_validation->set_rules('contact', 'Contact #', 'required');
@@ -97,6 +98,26 @@
         $this->session->set_flashdata('team_success', 'Sign Up Success, Thank you! :D. Taking too long? contact feudicon.web@gmail.com');
         redirect('submissions/team');
       }
+    }
+
+    public function view(){
+      $data['title'] = 'Submissions';
+      $data['LoginPage'] = false;
+
+      $this->load->view('templates/header', $data);
+      $this->load->view('submissions/view', $data);
+      $this->load->view('templates/footer', $data);
+    }
+
+    public function alistings(){
+      $data['title'] = 'Article Submissions';
+      $data['LoginPage'] = false;
+
+      $data['articles'] = $this->submissions_model->view_alistings();
+
+      $this->load->view('templates/header', $data);
+      $this->load->view('submissions/alistings', $data);
+      $this->load->view('templates/footer', $data);
     }
   }
 ?>
