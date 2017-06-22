@@ -7,6 +7,7 @@
     public function submit_article($sub_article){
 
       $data = array(
+        'ArtName' => $this->input->post('artname'),
         'Name' => $this->input->post('name'),
         'StudNum' => $this->input->post('studNum'),
         'Contact' => $this->input->post('contact'),
@@ -53,6 +54,12 @@
       );
 
       return $this->db->insert('team', $data);
+    }
+
+    public function view_alistings(){
+      $this->db->order_by('articles.article_id', 'DESC'); // Outputs the data by ID in descending order
+      $query = $this->db->get('articles'); // Get the table "news"
+      return $query->result_array(); // Outputs the array
     }
   }
 ?>
