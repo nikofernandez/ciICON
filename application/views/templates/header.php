@@ -71,7 +71,7 @@
             <?php if($this->session->userdata('logged_in')) : ?>
               <!-- Admin View -->
               <ul class="nav navbar-nav">
-                <li><a href="<?php echo base_url(); ?>dashboard/submissions">Submissions</a></li>
+                <li><a href="<?php echo base_url(); ?>submissions/view">Submissions</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posts <span class="caret"></span></a>
                   <ul class="dropdown-menu" id="dropdown-menu" role="menu">
