@@ -4,15 +4,18 @@
 
       <div class="list-group">
         <?php foreach ($photos as $pho) : ?>
-          <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading"><?php echo $pho['PhotoName']; ?> <small><?php echo $pho['send_at'] . ' |'; ?> <?php echo $pho['Name'] . ' [' . $pho['StudNum'] . ']';?></small></h4>
-            <p class="list-group-item-text"><?php echo word_limiter($pho['Description'], 60); ?></p>
-          </a>
-          <!-- <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">Title <small>01/01/2017</small></h4>
-            <p class="list-group-item-text">Name: John Doe [20150094][COURSE]</p>
-            <a href="#" class="btn btn-primary btn-xs">View Details</a>
-          </a> -->
+          <div class="media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <!-- http://via.placeholder.com/100x100 -->
+                <img class="media-object" src="<?php echo base_url();?>assets/documents/photos/<?php echo $pho['sub_photo'];?>" alt="..." width="200" height="150">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><?php echo $pho['PhotoName']; ?> <small><?php echo $pho['send_at'] . ' |'; ?> <?php echo $pho['Name'] . ' [' . $pho['StudNum'] . ']';?></small></h4>
+              <p><?php echo word_limiter($pho['Description'], 60); ?></p>
+            </div>
+          </div>
         <?php endforeach; ?>
       </div>
       <ul class="pager">
