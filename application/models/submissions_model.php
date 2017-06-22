@@ -68,5 +68,15 @@
       $query = $this->db->get('photos'); // Get the table "news"
       return $query->result_array(); // Outputs the array
     }
+
+    public function view_tlistings(){
+      $this->db->order_by('team.team_id', 'DESC'); // Outputs the data by ID in descending order
+      $query = $this->db->get('team'); // Get the table "news"
+      return $query->result_array(); // Outputs the array
+    }
+
+    // public function view_tskills(){
+    //   $this->db->order_by
+    // }
   }
 ?>

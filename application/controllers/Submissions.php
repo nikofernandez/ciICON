@@ -130,5 +130,16 @@
       $this->load->view('submissions/plistings', $data);
       $this->load->view('templates/footer', $data);
     }
+
+    public function tlistings(){
+      $data['title'] = 'Team Sign up';
+      $data['LoginPage'] = false;
+
+      $data['teams'] = $this->submissions_model->view_tlistings();
+
+      $this->load->view('templates/header', $data);
+      $this->load->view('submissions/tlistings', $data);
+      $this->load->view('templates/footer', $data);
+    }
   }
 ?>
