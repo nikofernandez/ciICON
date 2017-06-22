@@ -101,6 +101,10 @@
     }
 
     public function view(){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
+
       $data['title'] = 'Submissions';
       $data['LoginPage'] = false;
 
@@ -110,6 +114,10 @@
     }
 
     public function alistings(){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
+
       $data['title'] = 'Article Submissions';
       $data['LoginPage'] = false;
 
@@ -121,6 +129,10 @@
     }
 
     public function plistings(){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
+
       $data['title'] = 'Photos Submissions';
       $data['LoginPage'] = false;
 
@@ -132,6 +144,10 @@
     }
 
     public function tlistings(){
+      if(!$this->session->userdata('logged_in')){
+        redirect('/');
+      }
+      
       $data['title'] = 'Team Sign up';
       $data['LoginPage'] = false;
 
