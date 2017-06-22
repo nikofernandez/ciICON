@@ -21,6 +21,7 @@
 
     public function submit_photo($sub_photo){
       $data = array(
+        'PhotoName' => $this->input->post('photoname'),
         'Name' => $this->input->post('name'),
         'StudNum' => $this->input->post('studNum'),
         'Contact' => $this->input->post('contact'),

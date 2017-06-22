@@ -55,6 +55,10 @@
 
         <?php echo form_open_multipart('submissions/photo'); ?>
           <div class="form-group">
+            <label for="name">Photo Name</label><br>
+            <input type="text" name="photoname" class="form-control" value="" placeholder="Photo Name here...">
+          </div>
+          <div class="form-group">
             <label for="name">Name</label><br>
             <input type="text" name="name" class="form-control" value="" placeholder="Name here...">
           </div>
