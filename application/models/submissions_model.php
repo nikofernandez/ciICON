@@ -61,5 +61,11 @@
       $query = $this->db->get('articles'); // Get the table "news"
       return $query->result_array(); // Outputs the array
     }
+
+    public function view_plistings(){
+      $this->db->order_by('photos.photo_id', 'DESC'); // Outputs the data by ID in descending order
+      $query = $this->db->get('photos'); // Get the table "news"
+      return $query->result_array(); // Outputs the array
+    }
   }
 ?>

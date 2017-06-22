@@ -119,5 +119,16 @@
       $this->load->view('submissions/alistings', $data);
       $this->load->view('templates/footer', $data);
     }
+
+    public function plistings(){
+      $data['title'] = 'Photos Submissions';
+      $data['LoginPage'] = false;
+
+      $data['photos'] = $this->submissions_model->view_plistings();
+
+      $this->load->view('templates/header', $data);
+      $this->load->view('submissions/plistings', $data);
+      $this->load->view('templates/footer', $data);
+    }
   }
 ?>
