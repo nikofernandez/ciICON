@@ -9,6 +9,10 @@
   color: #000 !important;
 }
 
+.navbar-brand{
+  font-family: "Brush Script Std", "Brush Script MT", cursive !important;
+}
+
 .navbar-default a:hover{
   background-color: #17202A !important;
   color: #FDFEFE !important;
