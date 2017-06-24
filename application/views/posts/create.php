@@ -1,6 +1,6 @@
 <div class="container">
   <div class="well row">
-    <?php echo form_open('posts/create'); ?>
+    <?php echo form_open_multipart('posts/create'); ?>
       <fieldset class="form-horizontal">
         <legend><?= $title ?></legend>
 
@@ -27,6 +27,13 @@
 
               <?php endforeach; ?>
             </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="userfile" class="col-lg-2 control-label">Upload Image</label>
+          <div class="col-lg-10">
+            <input type="file" name="userfile" id="userfile">
+            <p class="help-block">only .jpg, .png, .jpeg</p>
           </div>
         </div>
         <div class="form-group">

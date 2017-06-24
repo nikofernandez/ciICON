@@ -6,7 +6,7 @@
         <?php foreach($posts as $post) : ?>
           <div class="row" id="news-listings">
             <div class="col-md-3">
-              <img src="http://via.placeholder.com/350x200" class="img img-responsive img-thumbnail" alt="">
+              <img src="<?php echo base_url(); ?>assets/img/<?php echo $post['photo_name']; ?>" class="img img-thumbnail" width="350" height="200" alt="">
             </div>
             <div class="col-md-9">
               <h2><?php echo $post['title']; ?> <small>Posted on: <?php echo $post['created_at']; ?></small></h2>

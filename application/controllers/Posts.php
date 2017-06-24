@@ -47,7 +47,22 @@
         $this->load->view('posts/create', $data);
         $this->load->view('templates/footer', $data);
       }else{
-        $this->post_model->create_post();
+        // Upload Docs
+        $config['upload_path'] = './assets/img';
+        $config['allowed_types'] = 'jpeg|png|jpg';
+
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload()) {
+          $errors = array('error' => $this->upload->display_errors());
+          $this->session->set_flashdata('post_failed', 'Upload Error, please try again :(');
+          redirect('posts/create');
+        } else {
+          $data = array('upload_data' => $this->upload->data());
+          $sub_photo  = $this->upload->data('file_name');
+        }
+
+        $this->post_model->create_post($sub_photo);
         $slug = url_title($this->input->post('title'));
         redirect('posts/view/'.$slug);
       }
