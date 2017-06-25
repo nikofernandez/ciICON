@@ -1,50 +1,70 @@
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="7000" id="bs-carousel">
-  <!-- Overlay -->
-  <div class="overlay"></div>
-
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#bs-carousel" data-slide-to="1"></li>
-    <li data-target="#bs-carousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item slides active">
-      <div class="slide-1"></div>
-      <div class="hero">
-        <hgroup>
-            <h1>ICON is back</h1>
-            <h3>Check it out</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all Projects</button>
-      </div>
+<div class="container-fluid">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="http://placehold.it/1400x450/16a085/ffffff&text=Insert Image">
+                <div class="carousel-caption">
+                    <h3>
+                        Headline</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <img src="http://placehold.it/1400x450/e67e22/ffffff&text=Projects">
+                <div class="carousel-caption">
+                    <h3>
+                        Headline</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <img src="http://placehold.it/1400x450/2980b9/ffffff&text=Portfolio">
+                <div class="carousel-caption">
+                    <h3>
+                        Headline</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <img src="http://placehold.it/1400x450/8e44ad/ffffff&text=Services">
+                <div class="carousel-caption">
+                    <h3>
+                        Headline</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+        </div>
+        <!-- End Carousel Inner -->
+        <ul class="nav nav-pills nav-justified" id="carousel-pills">
+            <li data-target="#myCarousel" data-slide-to="0"><a href="#">About<small>Lorem
+                ipsum dolor sit</small></a></li>
+            <li data-target="#myCarousel" data-slide-to="1"><a href="#">Projects<small>Lorem ipsum
+                dolor sit</small></a></li>
+            <li data-target="#myCarousel" data-slide-to="2"><a href="#">Portfolio<small>Lorem ipsum
+                dolor sit</small></a></li>
+            <li data-target="#myCarousel" data-slide-to="3"><a href="#">Services<small>Lorem ipsum
+                dolor sit</small></a></li>
+        </ul>
     </div>
-    <div class="item slides">
-      <div class="slide-2"></div>
-      <div class="hero">
-        <hgroup>
-            <h1>We are smart</h1>
-            <h3>Get the latest news</h3>
-        </hgroup>
-        <a href="<?php echo base_url(); ?>news/index" class="btn btn-hero btn-lg">Be updated</a>
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-3"></div>
-      <div class="hero">
-        <hgroup>
-            <h1>We are ICON</h1>
-            <h3>Join our awesome team</h3>
-        </hgroup>
-        <a href="<?php echo base_url(); ?>submissions/team" class="btn btn-hero btn-lg">Sign up now</a>
-      </div>
-    </div>
-  </div>
+    <!-- End Carousel -->
 </div>
-
-<hr>
 
 <!-- <section id="latest-news-section">
   <div class="container-fluid">
