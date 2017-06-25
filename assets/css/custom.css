@@ -9,11 +9,31 @@
   color: #000 !important;
 }
 
-.navbar-brand{
-  font-family: "Brush Script Std", "Brush Script MT", cursive !important;
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        background-color: #eee;
+    }
+    .navbar>.container .navbar-brand-centered,
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -95px !important;
+    }
+
+    .navbar-brand .navbar-brand-centered a:hover{
+      background-color: #FDFEFE !important;
+    }
 }
 
-.navbar-default a:hover{
+.navbar-brand,
+.navbar li a{
+  font-family: "Times New Roman", serif !important;
+}
+
+.navbar-default .nav .navbar-nav a:hover{
   background-color: #17202A !important;
   color: #FDFEFE !important;
 }

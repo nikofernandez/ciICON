@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom.css">
 
     <!-- Bootstrap CDN -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet" integrity="sha384-Li5uVfY2bSkD3WQyiHX8tJd0aMF91rMrQP5aAewFkHkVSTT2TmD2PehZeMmm7aiL" crossorigin="anonymous">
 
     <!-- Font Awesome CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
           </button>
           <?php if(!$this->session->userdata('logged_in')) : ?>
-            <a class="navbar-brand" href="<?php echo base_url(); ?>"><span class="fa fa-newspaper-o"></span> ICON</a>
+            <a class="navbar-brand navbar-brand-centered btn btn-link" href="<?php echo base_url(); ?>"><span class="fa fa-newspaper-o"></span> ICON</a>
           <?php endif; ?>
 
           <?php if($this->session->userdata('logged_in')) : ?>
@@ -93,14 +93,20 @@
             <?php if(!$this->session->userdata('logged_in')) : ?>
               <!-- Users View on Left -->
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo base_url(); ?>submissions/photo">Submit Photo</a></li>
-                <li><a href="<?php echo base_url(); ?>submissions/article">Submit Article</a></li>
-                <li><a href="<?php echo base_url(); ?>submissions/team">Join the Team</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Submission <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="<?php echo base_url(); ?>submissions/photo">Submit Photo</a></li>
+                  <li><a href="<?php echo base_url(); ?>submissions/article">Submit Article</a></li>
+                  <li class="divider"></li>
+                  <li><a href="<?php echo base_url(); ?>submissions/team">Join the Team</a></li>
+                </ul>
+              </li>
+
               </ul> <!-- End of Users View on Left -->
             <?php endif; ?>
 
           <?php endif; ?>
-
 
         </div>
       </div>

@@ -17,9 +17,9 @@
 
     <?php if($this->session->userdata('logged_in')) : ?>
       <div class="col-md-2">
-        <a href="<?php echo base_url(); ?>posts/edit/<?php echo $post['slug']; ?>" class=" btn btn-info pull-right">Edit</a>
+        <a href="<?php echo base_url(); ?>posts/edit/<?php echo $post['slug']; ?>" class=" btn btn-info btn-sm pull-right"><span class="fa fa-pencil"></span> Edit</a>
         <?php echo form_open('/posts/delete/'. $post['slug'] ); ?>
-          <input type="submit" class="btn btn-danger" name="Delete" value="Delete">
+          <button type="submit" class="btn btn-danger btn-sm" name="Delete"><span class="fa fa-times"></span> Delete</button>
         </form>
       </div>
     <?php endif; ?>
