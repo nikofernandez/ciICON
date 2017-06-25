@@ -10,10 +10,19 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <img src="<?php echo base_url(); ?>assets/img/<?php echo $post['photo_name']; ?>" class="img img-responsive img-thumbnail pull-right" width="300" height="300" alt="">
-      <h3><?php echo $post['title']; ?> <small>Posted on: <?php echo $post['created_at']; ?></small></h3>
-      <p><?php echo $post['body'] ?></p>
-    </div>
+      <div class="row hidden-md hidden-lg"><h1 class="text-center" >TITULO LARGO DE UNA INVESTIGACION cualquiera</h1></div>
+
+      <div class="pull-left col-md-4 col-xs-12 thumb-contenido">
+        <img class="center-block img-responsive" src='<?php echo base_url(); ?>assets/img/<?php echo $post['photo_name']; ?>' width="500" height="500" />
+      </div>
+      <div class="">
+        <h1  class="hidden-xs hidden-sm"><?php echo $post['title']; ?></h1>
+        <hr>
+        <small><?php echo $post['created_at']; ?></small>
+        <hr>
+        <p><?php echo $post['body'] ?></p>
+      </div>
+   </div>
 
     <?php if($this->session->userdata('logged_in')) : ?>
       <div class="col-md-2">
