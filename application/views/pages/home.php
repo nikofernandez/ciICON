@@ -1,4 +1,52 @@
-<section id="latest-news-section">
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="7000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>ICON is back</h1>
+            <h3>Check it out</h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all Projects</button>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>We are smart</h1>
+            <h3>Get the latest news</h3>
+        </hgroup>
+        <a href="<?php echo base_url(); ?>news/index" class="btn btn-hero btn-lg">Be updated</a>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>We are ICON</h1>
+            <h3>Join our awesome team</h3>
+        </hgroup>
+        <a href="<?php echo base_url(); ?>submissions/team" class="btn btn-hero btn-lg">Sign up now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- <section id="latest-news-section">
   <div class="container-fluid">
     <div class="row">
   		<div class="col-md-5 col-lg-5">
@@ -39,37 +87,48 @@
   		</div>
   	</div>
   </div>
-</section>
+</section> -->
 
-<hr>
-
-<section class="boxes">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="box">
-          <i class="fa fa-users" aria-hidden="true"></i>
-          <h3>HEI</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/350x250" alt="...">
+        <div class="caption">
+          <h3>Latest News</h3>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
+          <p class="text-center">
+            <a href="#" class="btn btn-primary" role="button">Read More</a>
+          </p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="box">
-          <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/350x250" alt="...">
+        <div class="caption">
+          <h3>Latest News</h3>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
+          <p class="text-center">
+            <a href="#" class="btn btn-primary" role="button">Read More</a>
+          </p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="box">
-          <i class="fa fa-code" aria-hidden="true"></i>
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/350x250" alt="...">
+        <div class="caption">
+          <h3>Latest News</h3>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
+          <p class="text-center">
+            <a href="#" class="btn btn-primary" role="button">Read More</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- FEATURES -->
 <section id="features">
