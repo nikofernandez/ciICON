@@ -116,7 +116,7 @@
         <img src="http://placehold.it/350x250" alt="...">
         <div class="caption">
           <h3>Latest News</h3>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt...</p>
           <p class="text-center">
             <a href="#" class="btn btn-primary" role="button">Read More</a>
           </p>
@@ -128,7 +128,7 @@
         <img src="http://placehold.it/350x250" alt="...">
         <div class="caption">
           <h3>Latest News</h3>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt...</p>
           <p class="text-center">
             <a href="#" class="btn btn-primary" role="button">Read More</a>
           </p>
@@ -140,7 +140,7 @@
         <img src="http://placehold.it/350x250" alt="...">
         <div class="caption">
           <h3>Latest News</h3>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident...</p>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt...</p>
           <p class="text-center">
             <a href="#" class="btn btn-primary" role="button">Read More</a>
           </p>
@@ -203,7 +203,7 @@
 <section id="main-message">
   <div class="container">
     <blockquote>
-      <p>" May our successor learn from the lesson that I personally learned the hard way: A passion thatr burns brightly scalds in cold water. The publication is in no doubt destined to show its true potential. May we all learn from that mistake and use it as a medium for improvement. Have a good one and good luck. We all need that "</p>
+      <p>" May our successor learn from the lesson that I personally learned the hard way: A passion that burns brightly scalds in cold water. The publication is in no doubt destined to show its true potential. May we all learn from that mistake and use it as a medium for improvement. Have a good one and good luck. We all need that "</p>
       <small>Message from our former <cite title="Source Title">EIC, Vernil P. Puno</cite></small>
     </blockquote>
   </div>
