@@ -27,14 +27,16 @@
           <h2>Author</h2>
           <p><?php echo $post['author']; ?></p>
         </div>
-        <div class="list-group">
-          <a class="list-group-item" href="<?php echo base_url(); ?>submissions/article">
-            <h4 class="list-group-item-heading"><span class="fa fa-newspaper-o"></span> Submit an Article</h4>
-          </a>
-          <a class="list-group-item" href="<?php echo base_url(); ?>submissions/photo">
-            <h4 class="list-group-item-heading"><span class="fa fa-photo"></span> Submit a Photo</h4>
-          </a>
-        </div>
+        <?php if(!$this->session->userdata('logged_in')) : ?>
+          <div class="list-group">
+            <a class="list-group-item" href="<?php echo base_url(); ?>submissions/article">
+              <h4 class="list-group-item-heading"><span class="fa fa-newspaper-o"></span> Submit an Article</h4>
+            </a>
+            <a class="list-group-item" href="<?php echo base_url(); ?>submissions/photo">
+              <h4 class="list-group-item-heading"><span class="fa fa-photo"></span> Submit a Photo</h4>
+            </a>
+          </div>
+        <?php endif; ?>
       </div>
       <?php if($this->session->userdata('logged_in')) : ?>
         <div class="col-md-2">
