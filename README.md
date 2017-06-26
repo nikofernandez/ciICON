@@ -58,8 +58,10 @@ CREATE TABLE `news` (
   `id` int(11) NOT NULL,
   `cat_id` int(11) NOT NULL,
   `title` varchar(200) NOT NULL,
+  `author` varchar(100) NOT NULL,
   `slug` varchar(200) NOT NULL,
   `body` text NOT NULL,
+  `photo_name` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
