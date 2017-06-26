@@ -26,13 +26,6 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/timeline.css">
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/flat/orange.css">
-
-    <style media="screen">
-      .navbar-nav > li > .dropdown-menu{
-        background-color: #F4D03F !important;
-      }
-    </style>
-
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -45,7 +38,9 @@
             <span class="icon-bar"></span>
           </button>
           <?php if(!$this->session->userdata('logged_in')) : ?>
-            <a class="navbar-brand navbar-brand-centered btn btn-link" href="<?php echo base_url(); ?>"><span class="fa fa-newspaper-o"></span> ICON</a>
+            <!-- <span class="fa fa-newspaper-o"></span> ICON -->
+            <!-- <img src="<?php// echo base_url(); ?>assets/img/ICON_Logo.png" alt=""> -->
+            <a class="navbar-brand navbar-brand-centered btn btn-link" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/ICON_Logo.png" alt=""></a>
           <?php endif; ?>
 
           <?php if($this->session->userdata('logged_in')) : ?>
