@@ -44,7 +44,7 @@
           <?php endif; ?>
 
           <?php if($this->session->userdata('logged_in')) : ?>
-            <a class="navbar-brand" href="<?php echo base_url(); ?>dashboard/index"><span class="fa fa-dashboard"></span> Overview</a>
+
           <?php endif; ?>
         </div>
 
@@ -66,6 +66,7 @@
             <?php if($this->session->userdata('logged_in')) : ?>
               <!-- Admin View -->
               <ul class="nav navbar-nav">
+                <li><a href="<?php echo base_url(); ?>dashboard/index"><span class="fa fa-dashboard"></span> Overview</a></li>
                 <li><a href="<?php echo base_url(); ?>submissions/view">Submissions</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posts <span class="caret"></span></a>
