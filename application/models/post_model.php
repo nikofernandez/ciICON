@@ -38,6 +38,7 @@
 
       $data = array(
         'title' => $this->input->post('title'),
+        'author' => $this->input->post('author'),
         'slug' => $slug,
         'body' => $this->input->post('body'),
         'cat_id' => $this->input->post('category'),

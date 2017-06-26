@@ -41,6 +41,7 @@
 
       $this->form_validation->set_rules('title', 'Title', 'required');
       $this->form_validation->set_rules('body', 'Body', 'required');
+      $this->form_validation->set_rules('author', 'Author', 'required');
 
       if ($this->form_validation->run() === FALSE) {
         $this->load->view('templates/header', $data);

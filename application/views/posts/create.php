@@ -4,12 +4,18 @@
       <fieldset class="form-horizontal">
         <legend><?= $title ?></legend>
 
-        <?php echo validation_errors(); ?>
+        <h5 class="text-danger text-center"><?php echo validation_errors(); ?></h5>
 
         <div class="form-group">
           <label for="inputTitle" class="col-lg-2 control-label">Title</label>
           <div class="col-lg-10">
             <input type="text" class="form-control" name="title" id="inputTitle" placeholder="Title">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAuth" class="col-lg-2 control-label">Author</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="inputAuth" name="author" placeholder="Author">
           </div>
         </div>
         <div class="form-group">
