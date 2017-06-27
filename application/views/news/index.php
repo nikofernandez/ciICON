@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <h2><span class="fa fa-bell"></span> Check Out The Latest News <small>Lorem ipsum dolor sit amet</small></h2>
+  <h2><span class="fa fa-bell"></span> Check Out The Latest News</h2>
 </div>
 
 <hr>
