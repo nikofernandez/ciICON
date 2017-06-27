@@ -4,7 +4,7 @@
       <fieldset class="form-horizontal">
         <legend><?= $title ?></legend>
 
-        <?php echo validation_errors(); ?>
+        <h5 class="text-danger"><?php echo validation_errors(); ?></h5>
 
         <div class="form-group">
           <label for="inputName" class="col-lg-2 control-label">Name</label>
