@@ -109,9 +109,26 @@
   </div>
 </section> -->
 
+<!-- //TODO: Set image size to 350x250 -->
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-md-4">
+    <?php foreach($latest_posts as $latest) : ?>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <!-- <img src="http://placehold.it/350x250" alt="..."> -->
+          <img src="<?php echo base_url(); ?>assets/img/<?php echo $latest['photo_name']; ?>" id="latest-img" alt="">
+          <div class="caption">
+            <h3><?php echo $latest['title']; ?></h3>
+            <p class="text-justify"><?php echo word_limiter($latest['body'], 25); ?></p>
+            <p class="text-center">
+              <!-- <a href="#" class="btn btn-primary" role="button">Read More</a> -->
+              <a href="<?php echo site_url('/posts/view/'.$latest['slug']); ?>" class="btn btn-primary">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    <?php endforeach; ?>
+    <!-- <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <img src="http://placehold.it/350x250" alt="...">
         <div class="caption">
@@ -146,7 +163,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 

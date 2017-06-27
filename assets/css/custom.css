@@ -275,3 +275,9 @@ section{width:100%; float:left;}
   }
 }
 /* END OF NEWS VIEW SINGLE */
+
+/* LATEST NEWS */
+#latest-img{
+  width: 350px !important;
+  height: 250px !important;
+}
