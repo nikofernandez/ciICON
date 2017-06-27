@@ -5,7 +5,10 @@
       <div class="list-group">
         <?php foreach ($articles as $art) : ?>
           <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading"><?php echo $art['ArtName']; ?> <small><?php echo $art['send_at'] . ' |'; ?> <?php echo $art['Name'] . ' [' . $art['StudNum'] . ']';?></small></h4>
+            <h4 class="list-group-item-heading">
+              <?php echo $art['ArtName']; ?>
+              <small><?php echo $art['send_at'] . ' |'; ?> <?php echo $art['Name'] . ' [' . $art['StudNum'] . ']';?></small>
+            </h4>
             <p class="list-group-item-text"><?php echo word_limiter($art['Description'], 60); ?></p>
           </a>
           <!-- <a href="#" class="list-group-item">
