@@ -5,11 +5,11 @@
       $this->db->where('Email', $email);
       $this->db->where('Pword', $pword);
 
-      $result = $this->db->get('accounts');
+      $result = $this->db->get('accounts'); // Execute Search
 
-      if($result->num_rows() == 1){
+      if($result->num_rows() == 1){ // If results is true
         return $result->row(0)->acc_id;
-      }else{
+      }else{ // If no records found
         return false;
       }
     }
