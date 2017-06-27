@@ -55,4 +55,7 @@
       </div>
     </li>
   </ul>
+
+  <?php // TODO: Add "Meet the Team" section ?>
+
 </div>

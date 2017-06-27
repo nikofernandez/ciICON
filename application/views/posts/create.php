@@ -1,5 +1,6 @@
 <div class="container">
   <div class="well row">
+    <?php // TODO: Re-check fields ?>
     <?php echo form_open_multipart('posts/create'); ?>
       <fieldset class="form-horizontal">
         <legend><?= $title ?></legend>

@@ -1,5 +1,6 @@
 <div class="container">
   <div class="well row">
+    <?php // TODO: Add delete/replace image functionality ?>
     <?php echo form_open('posts/update'); ?>
       <fieldset class="form-horizontal">
         <legend><?= $title ?></legend>

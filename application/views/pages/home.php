@@ -1,3 +1,4 @@
+<?php // TODO: Add pictures for Carousel (1400x450) ?>
 <div class="container-fluid">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
@@ -109,7 +110,7 @@
   </div>
 </section> -->
 
-<!-- //TODO: Set image size to 350x250 -->
+<?php // TODO: Set image size to 350x250 in custom.css ?>
 <div class="container">
   <div class="row">
     <?php foreach($latest_posts as $latest) : ?>
@@ -128,42 +129,6 @@
         </div>
       </div>
     <?php endforeach; ?>
-    <!-- <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/350x250" alt="...">
-        <div class="caption">
-          <h3>Latest News</h3>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt...</p>
-          <p class="text-center">
-            <a href="#" class="btn btn-primary" role="button">Read More</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/350x250" alt="...">
-        <div class="caption">
-          <h3>Latest News</h3>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt...</p>
-          <p class="text-center">
-            <a href="#" class="btn btn-primary" role="button">Read More</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/350x250" alt="...">
-        <div class="caption">
-          <h3>Latest News</h3>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt...</p>
-          <p class="text-center">
-            <a href="#" class="btn btn-primary" role="button">Read More</a>
-          </p>
-        </div>
-      </div>
-    </div> -->
   </div>
 </div>
 

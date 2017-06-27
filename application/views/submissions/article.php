@@ -11,6 +11,7 @@
         <div class="panel-heading">
           <h3 class="panel-title"><span class="fa fa-certificate"></span> Qualifications</h3>
         </div>
+        <?php // TODO: Re-check rules ?>
         <div class="panel-body">
           <i class="fa fa-check text-success"> YES</i>
           <ul>

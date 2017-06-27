@@ -1,12 +1,5 @@
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <!-- <img src="http://via.placeholder.com/1500x250" class="img img-responsive" alt=""> -->
-
-  </div>
-</div>
-
-<section class="banner-section">
-</section>
+<?php // TODO: Re-check design ?>
+<section class="banner-section"></section>
 <section class="post-content-section">
   <div class="container">
     <div class="row">

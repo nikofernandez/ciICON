@@ -7,6 +7,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
+      <?php // TODO: Add functionality ?>
       <form class="well">
         <div class="form-group">
           <label for="name">Name</label><br>
