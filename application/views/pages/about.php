@@ -56,6 +56,36 @@
     </li>
   </ul>
 
+  <hr>
+
   <?php // TODO: Add "Meet the Team" section ?>
+  <section id="team-list">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t34.0-12/18788664_1885202465084356_1812123590_n.jpg?oh=e2695cc33b32d81aff40a368a1221404&oe=5956E9BB"
+        class="img-team center-block" >
+        <h3 class="text-center">
+          Samantha Siojo<br>
+          <small>Editor-in-Chief</small>
+        </h3>
+      </div>
+      <div class="col-md-4">
+        <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t34.0-12/18902318_1885232411748028_726358551_n.jpg?oh=be66279ba1b242245c8d474fdd0afe6c&oe=5957468E"
+        class="center-block img-team" >
+        <h3 class="text-center">
+          Mikaela Arcenal<br>
+          <small>Editorial Writers</small>
+        </h3>
+      </div>
+      <div class="col-md-4">
+        <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t34.0-12/18902966_1885202451751024_537547540_n.jpg?oh=72d03c3038d2d8d0f6a32766222f58b8&oe=59574A37"
+        class="center-block img-team">
+        <h3 class="text-center">
+          Nicole Feliz Infante<br>
+          <small>Accounts Director</small>
+        </h3>
+      </div>
+    </div>
+  </section>
 
 </div>

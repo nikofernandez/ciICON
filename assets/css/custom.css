@@ -282,3 +282,21 @@ section{width:100%; float:left;}
   width: 350px !important;
   height: 250px !important;
 }
+/* END OF LATEST NEWS */
+
+/* TEAM-LIST */
+.img-team{
+  border-radius: 50%;
+  width: 215px;
+  height: 210px;
+}
+
+#team-list h3{
+  font-weight: 800;
+  color: #F0AD4E;
+}
+
+#team-list small{
+  text-align: center;
+  color: gray;
+}
