@@ -85,6 +85,30 @@
           <small>Accounts Director</small>
         </h3>
       </div>
+      <div class="col-md-4">
+        <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/18194978_10209349051858814_6386714908875355995_n.jpg?oh=23a41042a5e0b69f4ec864579d7990e2&oe=59CF8F9A"
+        class="img-team center-block" >
+        <h3 class="text-center">
+          Elniley Manansala<br>
+          <small>Managing Editor</small>
+        </h3>
+      </div>
+      <div class="col-md-4">
+        <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/12647497_1670642946540310_2942286637955321391_n.jpg?oh=cc56928bbf9929a5b5a1a1c4659102b6&oe=59D0DD2D"
+        class="center-block img-team" >
+        <h3 class="text-center">
+          Maki Soneja<br>
+          <small>Digitals Director</small>
+        </h3>
+      </div>
+      <div class="col-md-4">
+        <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t34.0-12/18928406_1885232328414703_905670425_n.jpg?oh=d80ddcebf274dec1ffa72e8f1494c28b&oe=5956FC3A"
+        class="center-block img-team">
+        <h3 class="text-center">
+          Jeck Tana<br>
+          <small>Layout Artist</small>
+        </h3>
+      </div>
     </div>
   </section>
 
