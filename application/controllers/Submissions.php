@@ -100,6 +100,26 @@
       }
     }
 
+    public function contact(){
+      $data['title'] = 'Contact Us';
+      $data['LoginPage'] = false;
+
+      $this->form_validation->set_rules('name', 'Name', 'required');
+      $this->form_validation->set_rules('contact', 'Contact #', 'required');
+      $this->form_validation->set_rules('email', 'Email', 'required');
+      $this->form_validation->set_rules('message', 'Message', 'required');
+
+      if($this->form_validation->run() === FALSE){
+        $this->load->view('templates/header', $data);
+        $this->load->view('submissions/contact', $data);
+        $this->load->view('templates/footer', $data);
+      }else{
+        $this->submissions_model->submit_feed();
+        $this->session->set_flashdata('feed_sucess', 'Your feedback is appreciated :D');
+        redirect('submissions/contact');
+      }
+    }
+
     public function view(){
       if(!$this->session->userdata('logged_in')){
         redirect('/');
@@ -147,7 +167,7 @@
       if(!$this->session->userdata('logged_in')){
         redirect('/');
       }
-      
+
       $data['title'] = 'Team Sign up';
       $data['LoginPage'] = false;
 

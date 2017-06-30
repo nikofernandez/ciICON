@@ -59,6 +59,17 @@
       return $this->db->insert('team', $data); // Execute insert
     }
 
+    public function submit_feed(){
+      $data = array( // Collect data in inputs (feed_id and send_at have default values)
+        'name' => $this->input->post('name'),
+        'email' => $this->input->post('email'),
+        'contact' => $this->input->post('contact'),
+        'message' => $this->input->post('message')
+      );
+
+      return $this->db->insert('feedback', $data); // Execute insert
+    }
+
     public function view_alistings(){
       $this->db->order_by('articles.article_id', 'DESC'); // Outputs the data by ID in descending order
       $query = $this->db->get('articles'); // Get the table "news"

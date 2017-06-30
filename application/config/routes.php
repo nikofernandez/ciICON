@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['admin'] = 'admin/login';
 
+$route['submissions/contact'] = 'submissions/contact';
 $route['submissions/article'] = 'submissions/article';
 $route['submissions/photo'] = 'submissions/photo';
 $route['submissions/team'] = 'submissions/team';

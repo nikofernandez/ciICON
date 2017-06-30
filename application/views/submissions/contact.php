@@ -8,7 +8,24 @@
   <div class="row">
     <div class="col-md-6">
       <?php // TODO: Add functionality ?>
-      <form class="well">
+
+      <h5 class="text-danger"><?php echo validation_errors(); ?></h5>
+
+      <?php if($this->session->flashdata('contact_failed')) : ?>
+        <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <?php echo $this->session->flashdata('contact_failed'); ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if($this->session->flashdata('contact_success')) : ?>
+        <div class="alert alert-dismissible alert-success">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <?php echo $this->session->flashdata('contact_success'); ?>
+        </div>
+      <?php endif; ?>
+
+      <?php echo form_open('submissions/contact'); ?>
         <div class="form-group">
           <label for="name">Name</label><br>
           <input type="text" name="name" class="form-control" value="" placeholder="Name here...">
@@ -21,14 +38,14 @@
           <label for="contact">Contact #</label><br>
           <div class="input-group">
             <span class="input-group-addon" id="contactNum">+63</span>
-            <input type="text" class="form-control" class="form-control" placeholder="Contact # here..." aria-describedby="contactNum">
+            <input type="text" name="contact" class="form-control" class="form-control" placeholder="Contact # here..." aria-describedby="contactNum">
           </div>
         </div>
         <div class="form-group">
           <label for="message">Message</label><br>
           <textarea name="message" class="form-control" rows="10" cols="30"></textarea>
         </div>
-        <button type="button" class="btn btn-success" name="button">Submit</button>
+        <button type="submit" class="btn btn-success" name="button">Submit</button>
       </form>
     </div>
     <div class="col-md-6">

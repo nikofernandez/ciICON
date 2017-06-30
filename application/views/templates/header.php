@@ -59,7 +59,7 @@
               <ul class="nav navbar-nav">
                 <li><a href="<?php echo base_url(); ?>about">About</a></li>
                 <li><a href="<?php echo base_url(); ?>news/index">News</a></li>
-                <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
+                <li><a href="<?php echo base_url(); ?>submissions/contact">Contact Us</a></li>
               </ul> <!-- End of Users View nav-right-->
             <?php endif; ?>
 
