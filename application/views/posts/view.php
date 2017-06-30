@@ -1,14 +1,14 @@
 <?php // TODO: Re-check design ?>
-<section class="banner-section"></section>
+<section class="banner-section">
+  <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
+    <h1 class="text-center"><?php echo $post['title']; ?></h1>
+    <ul class="list-inline text-center">
+      <li><?php echo $post['created_at']; ?></li>
+    </ul>
+  </div>
+</section>
 <section class="post-content-section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
-        <h1 class="text-center"><?php echo $post['title']; ?></h1>
-        <ul class="list-inline text-center">
-          <li><?php echo $post['created_at']; ?></li>
-        </ul>
-      </div>
       <div class="col-lg-9 col-md-9 col-sm-12">
         <div class="image-block">
           <img src="<?php echo base_url(); ?>assets/img/<?php echo $post['photo_name']; ?>" class="img-responsive" width="550" height="500">
