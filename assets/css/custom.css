@@ -300,3 +300,16 @@ section{width:100%; float:left;}
   text-align: center;
   color: gray;
 }
+
+.team-name{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.team-name h1{
+  font-weight: bolder;
+  font-style: "Georgia", serif !important;
+}
+
+.news-corr{
+  border-radius: 15px;
+}
