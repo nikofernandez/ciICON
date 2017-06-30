@@ -7,7 +7,6 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
-      <?php // TODO: Add functionality ?>
 
       <h5 class="text-danger"><?php echo validation_errors(); ?></h5>
 
