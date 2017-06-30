@@ -115,7 +115,7 @@
         $this->load->view('templates/footer', $data);
       }else{
         $this->submissions_model->submit_feed();
-        $this->session->set_flashdata('feed_sucess', 'Your feedback is appreciated :D');
+        $this->session->set_flashdata('feed_success', 'Your feedback is appreciated :D');
         redirect('submissions/contact');
       }
     }

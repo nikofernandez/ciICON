@@ -10,17 +10,17 @@
 
       <h5 class="text-danger"><?php echo validation_errors(); ?></h5>
 
-      <?php if($this->session->flashdata('contact_failed')) : ?>
+      <?php if($this->session->flashdata('feed_failed')) : ?>
         <div class="alert alert-dismissible alert-danger">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <?php echo $this->session->flashdata('contact_failed'); ?>
+          <?php echo $this->session->flashdata('feed_failed'); ?>
         </div>
       <?php endif; ?>
 
-      <?php if($this->session->flashdata('contact_success')) : ?>
+      <?php if($this->session->flashdata('feed_success')) : ?>
         <div class="alert alert-dismissible alert-success">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <?php echo $this->session->flashdata('contact_success'); ?>
+          <?php echo $this->session->flashdata('feed_success'); ?>
         </div>
       <?php endif; ?>
 
