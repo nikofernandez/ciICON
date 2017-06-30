@@ -2,7 +2,7 @@
   <section class="boxes">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="box">
             <a href="#">
               <i class="fa fa-newspaper-o" aria-hidden="true"></i>
@@ -11,7 +11,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="box">
             <a href="#">
               <i class="fa fa-photo" aria-hidden="true"></i>
@@ -20,11 +20,20 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="box">
             <a href="#">
               <i class="fa fa-users" aria-hidden="true"></i>
               <h3><a href="<?php echo site_url('submissions/tlistings'); ?>">Recruitment</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="box">
+            <a href="#">
+              <i class="fa fa-feed" aria-hidden="true"></i>
+              <h3><a href="<?php echo site_url('submissions/flistings'); ?>">Feedback</a></h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </a>
           </div>

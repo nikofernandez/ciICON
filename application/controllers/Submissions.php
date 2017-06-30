@@ -177,5 +177,20 @@
       $this->load->view('submissions/tlistings', $data);
       $this->load->view('templates/footer', $data);
     }
+
+    public function flistings(){
+      if (!$this->session->userdata('logged_in')) {
+        redirect('/');
+      }
+
+      $data['title'] = 'Feedback';
+      $data['LoginPage'] = false;
+
+      $data['feedbacks'] = $this->submissions_model->view_flistings();
+
+      $this->load->view('templates/header', $data);
+      $this->load->view('submissions/flistings', $data);
+      $this->load->view('templates/footer', $data);
+    }
   }
 ?>

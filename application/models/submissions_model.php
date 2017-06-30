@@ -88,5 +88,11 @@
       return $query->result_array(); // Outputs the array
     }
 
+    public function view_flistings(){
+      $this->db->order_by('feedback.feed_id', 'DESC');
+      $query = $this->db->get('feedback');
+      return $query->result_array();
+    }
+
   }
 ?>
