@@ -4,10 +4,7 @@
       $this->load->database(); // Loads database
     }
 
-    public function get_posts($slug = FALSE, $limit = FALSE, $offset = FALSE){
-      if ($limit) { // Set results limit w/ offset 0
-        $this->db->limit($limit, $offset);
-      }
+    public function get_posts($slug = FALSE){
 
       if($slug === FALSE){
         $this->db->order_by('news.id', 'DESC'); // Outputs the data by ID in descending order

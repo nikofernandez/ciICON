@@ -4,7 +4,7 @@
       <?php // TODO: Add single views w/ download file functionality ?>
       <div class="list-group">
         <?php foreach ($teams as $tea) : ?>
-          <a href="#" class="list-group-item">
+          <a href="<?php echo site_url('/submissions/tsingles/'.$tea['StudNum']); ?>" class="list-group-item">
             <h4 class="list-group-item-heading"><?php echo $tea['Name']; ?> <strong><?php echo $tea['StudNum']; ?></strong> <small><?php echo $tea['requested_at']; ?></small></h4>
             <p class="list-group-item-text">
               <dl class="dl-horizontal">

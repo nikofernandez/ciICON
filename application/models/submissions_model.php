@@ -94,5 +94,23 @@
       return $query->result_array();
     }
 
+    public function get_skills($studnum = FALSE){
+      if($studnum === FALSE){
+        redirect('submissions/tlistings');
+      }
+
+      $query = $this->db->get_where('skills', array('StudNum' => $studnum));
+      return $query->result_array();
+    }
+
+    public function get_team_singles($studnum = FALSE){
+      if($studnum === FALSE){
+        redirect('submissions/tlistings');
+      }
+
+      $query = $this->db->get_where('team', array('StudNum' => $studnum));
+      return $query->row_array();
+    }
+
   }
 ?>

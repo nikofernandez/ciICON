@@ -192,5 +192,18 @@
       $this->load->view('submissions/flistings', $data);
       $this->load->view('templates/footer', $data);
     }
+
+    public function tsingles($studnum = NULL){
+      $data['team'] = $this->submissions_model->get_team_singles($studnum);
+      $data['skills'] = $this->submissions_model->get_skills($studnum);
+
+      $data['title'] = 'Team';
+      $data['LoginPage'] = false; // Required variable
+
+      // Load page
+      $this->load->view('templates/header', $data);
+      $this->load->view('submissions/tsingles', $data);
+      $this->load->view('templates/footer', $data);
+    }
   }
 ?>
