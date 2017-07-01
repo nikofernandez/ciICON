@@ -216,5 +216,16 @@
       $this->load->view('submissions/asingles', $data);
       $this->load->view('templates/footer', $data);
     }
+
+    public function psingles($photo_id = NULL){
+      $data['photo'] = $this->submissions_model->get_photo_singles($photo_id);
+
+      $data['title'] = 'Photo';
+      $data['LoginPage'] = false;
+
+      $this->load->view('templates/header', $data);
+      $this->load->view('submissions/psingles', $data);
+      $this->load->view('templates/footer', $data);
+    }
   }
 ?>

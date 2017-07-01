@@ -7,5 +7,12 @@
       $data = file_get_contents(base_url('/assets/documents/articles/'.$fileName));
       force_download($filename, $data);
     }
+
+    public function downloadPhoto($fileName = NULL){
+
+      $this->load->helper('download');
+      $data = file_get_contents(base_url('/assets/documents/photos/'.$fileName));
+      force_download($filename, $data);
+    }
   }
 ?>

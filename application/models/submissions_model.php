@@ -121,5 +121,14 @@
       return $query->row_array();
     }
 
+    public function get_photo_singles($photo_id = FALSE){
+      if($photo_id === FALSE){
+        redirect('submissions/plistings');
+      }
+
+      $query = $this->db->get_where('photos', array('photo_id' => $photo_id));
+      return $query->row_array();
+    }
+
   }
 ?>

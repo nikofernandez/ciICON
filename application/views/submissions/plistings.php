@@ -6,8 +6,7 @@
         <?php foreach ($photos as $pho) : ?>
           <div class="media">
             <div class="media-left media-middle">
-              <a href="#">
-                <!-- http://via.placeholder.com/100x100 -->
+              <a href="<?php echo site_url('/submissions/psingles/'.$pho['photo_id']); ?>">
                 <img class="media-object" src="<?php echo base_url();?>assets/documents/photos/<?php echo $pho['sub_photo'];?>" alt="..." width="200" height="150">
               </a>
             </div>
