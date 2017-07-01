@@ -4,7 +4,7 @@
       <?php // TODO: Add single views w/ download file functionality ?>
       <div class="list-group">
         <?php foreach ($articles as $art) : ?>
-          <a href="#" class="list-group-item">
+          <a href="<?php echo site_url('/submissions/asingles/'.$art['article_id']); ?>" class="list-group-item">
             <h4 class="list-group-item-heading">
               <?php echo $art['ArtName']; ?>
               <small><?php echo $art['send_at'] . ' |'; ?> <?php echo $art['Name'] . ' [' . $art['StudNum'] . ']';?></small>

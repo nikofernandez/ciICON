@@ -112,5 +112,14 @@
       return $query->row_array();
     }
 
+    public function get_article_singles($article_id = FALSE){
+      if($article_id === FALSE){
+        redirect('submissions/alistings');
+      }
+
+      $query = $this->db->get_where('articles', array('article_id' => $article_id));
+      return $query->row_array();
+    }
+
   }
 ?>

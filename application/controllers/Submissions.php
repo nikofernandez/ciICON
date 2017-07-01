@@ -205,5 +205,16 @@
       $this->load->view('submissions/tsingles', $data);
       $this->load->view('templates/footer', $data);
     }
+
+    public function asingles($article_id = NULL){
+      $data['articles'] = $this->submissions_model->get_article_singles($article_id);
+
+      $data['title'] = 'Article';
+      $data['LoginPage'] = false;
+
+      $this->load->view('templates/header', $data);
+      $this->load->view('submissions/asingles', $data);
+      $this->load->view('templates/footer', $data);
+    }
   }
 ?>
