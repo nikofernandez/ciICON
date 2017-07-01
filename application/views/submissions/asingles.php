@@ -13,10 +13,11 @@
     <div class="col-xs-12 divider"></div>
     <div class="col-xs-12 text-center button-options">
       <div class="col-xs-12 col-sm-6 emphasis">
-        <button class="btn btn-info btn-block"><span class="fa fa-download"></span> Download </button>
+        <a href="<?php echo base_url() ?>/FileController/download/<?php echo $articles['sub_article']; ?>" class="btn btn-info btn-block"> <span class="fa fa-download"></span> Download</a>
+        <!-- <button class="btn btn-info btn-block"><span class="fa fa-download"></span> Download </button> -->
       </div>
       <div class="col-xs-12 col-sm-6 emphasis">
-        <a href="<?php echo base_url(); ?>submissions/tlistings" class="btn btn-warning btn-block"><span class="fa fa-arrow-left"></span> Go Back </a>
+        <a href="<?php echo base_url(); ?>submissions/alistings" class="btn btn-warning btn-block"><span class="fa fa-arrow-left"></span> Go Back </a>
       </div>
     </div>
   </div>
